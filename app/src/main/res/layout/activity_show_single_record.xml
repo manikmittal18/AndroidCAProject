@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowSingleRecordActivity">
+
+
+    <TextView
+        android:text="ID = "
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView1"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Name = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView2"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="PhoneNumber =       "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Disease = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView4"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Date = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView5"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Time = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Id Show Here"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewID"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textView3"/>
+
+    <TextView
+        android:text="Name Show Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/textViewID"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <TextView
+        android:text="Phone Number Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPhoneNumber"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textViewName"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="Disease Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDisease"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textViewPhoneNumber"
+        android:layout_toRightOf="@+id/textView3"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Date Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDate"
+        android:layout_below="@+id/textViewDisease"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <TextView
+        android:text="Time Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTime"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textViewDate"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/textView3"/>
+
+    <Button
+        android:text="Click Here To Edit This Record"
+        android:layout_width="fill_parent"
+        android:textSize="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/textView6"
+        android:textColor="#050505"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonEdit" />
+
+    <Button
+        android:text="Click Here to Delete This Record"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonEdit"
+        android:textColor="#050505"
+        android:background="@drawable/rounded_button"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/buttonDelete"
+        />
+
+</RelativeLayout>

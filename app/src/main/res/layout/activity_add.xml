@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Add Patients Details"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        android:ems="10"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="27dp"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:hint="Enter Phone Number"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:maxLength="10"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/editText2" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText2"
+        android:background="@drawable/rounded_edittext"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Enter Disease Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="37dp"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:focusable="false"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Visit Date"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/editText5"
+        android:focusable="false"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Visit Time"/>
+
+    <Button
+        android:text="Submit"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:id="@+id/button" />
+
+</RelativeLayout>
+
+</ScrollView>
